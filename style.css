@@ -1,0 +1,217 @@
+/* Reset margins and paddings */
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Lettertype */
+}
+
+/* Background color website */
+body {
+    background-color: #1a1a1a; 
+}
+
+/* Container for the login and registration form */
+.container {
+    background: #363636;
+    width: 450px;
+    padding: 3rem 3rem 5rem 3rem; /* Room of the links is 5rm*/
+    margin: 100px auto;
+    border-radius: 20px;
+    position: relative;  /* Means that left and right will be pinned */
+}
+/* Remove deflaut spacing */
+form {
+    margin: 0;
+}
+
+/* Styling login page and register page */
+.form-title {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+/* Sets the label (Username:) a bove the fill in box */
+.input-group {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* label is the styling for the text above the boxes */
+label {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* give the grey styling not to submit */
+input:not([type="submit"]) {
+    width: 100%;
+    background-color: #dcdcdc;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 40px 12px 15px; /* Room rightside of the icons */
+    outline: none;
+}
+
+/* Giving they color to the text in the fill inbox  */
+input::placeholder {
+    color: black; 
+}
+
+/* Icons pop and slot in the fill box */
+.input-group i {
+    position: absolute;
+    right: 15px;
+    bottom: 14px;
+    color: #000;
+    font-size: 1rem;
+}
+
+/* login button */
+.btn {
+    font-size: 12px;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 120px;
+    background: #888888;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto 0 auto; /* Set it in the middel */
+}
+
+/* Make the button dark when going over the button */
+.btn:hover {
+    background: #666666;
+}
+
+/* Fontys logo placing */
+.logo {
+    position: absolute;
+    top: 24px;      /* Distance from they upside*/
+    right: 20px;    /* Distance from they rightside */
+    width: 100px;   /* Changing how big/small it is */
+    height: auto;   /* Automatically it will set the proportions */
+}
+
+/* Styling for the or text */
+.or {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Center login icons Google/Facebook */
+.icons {
+    text-align: center;
+}
+
+/* Styling for the indivdual icons Google/Facebook */
+.icons i {
+    display: inline-block;
+    width: 3.5rem;
+    color: rgb(125, 125, 235);
+    padding: 0.8rem 0;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    margin: 0 15px;
+    transition: 1s;
+
+}
+
+/* Invert the colors and make little larger icons Google/Facebook */
+.icons i:hover {
+    background: #07001f;
+    font-size: 1.6rem;
+    border: 2px solid rgb(125, 125, 235);
+}
+
+/* Change password */
+.recover {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Works on the <p> */
+.recover p {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0 0 2px 0;
+}
+
+/* Register*/
+.links {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Works on the <p> */
+.links p {
+    color: #ffffff;;
+    font-size: 12px;
+    margin: 0 0 2px 0;
+}
+
+/* Styling for the buttons change here, login here and register here*/
+button {
+    color: #3498db;
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Add a underline effent when going over the buttons */
+button:hover {
+    text-decoration: underline;
+}
+
+/* Distance eye from the box */
+.input-group .fa-eye {
+    right: 12px;
+}
+
+/* Clickable */
+.input-group .toggle-password {
+    position: absolute;
+    right: -41px ; /* Put to they right, next to the box */
+    bottom: 5px ;  /* Set verticaal next to the box*/
+    background-color: #dcdcdc; /* Light gray */
+    padding: 9px 10px;
+    border-radius: 20px; /* Vorm around they eye*/
+    color: #000;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Hide the default Microsoft Edge password reveal icon (Asked ChatGPT how to remove it prompt:"How to remove automatic second eye of edge from my login page?" Answer: 
+If you mean the second eye icon that Microsoft Edge automatically adds to your password field on your login page, you can try hiding it with CSS.
+Add this to your CSS file:code here down. Important: If the extra eye is actually coming from a browser extension or another password manager, this CSS might not remove it.)*/
+input[type="password"]::-ms-reveal {
+    display: none;
+}
